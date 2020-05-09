@@ -23,5 +23,5 @@ module Styles = {
 
 [@react.component]
 let make = () => {
-  <div className=Styles.wrapper />;
+  <section className=Styles.wrapper />;
 };
