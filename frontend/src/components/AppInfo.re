@@ -20,5 +20,9 @@ module Styles = {
 
 [@react.component]
 let make = () => {
-  <section className=Styles.wrapper> <MainLogo /> <IntroApp /> </section>;
+  <section className=Styles.wrapper>
+    <MainLogo />
+    <IntroApp />
+    <InfoFooter />
+  </section>;
 };
