@@ -79,7 +79,11 @@ let make = () => {
        )}
     </p>
     <h3 className=Styles.h3> {React.string("Download aria for free on")} </h3>
-    <a href="#" className=Styles.a> <img src=appStore /> </a>
-    <a href="#" className=Styles.a> <img src=playStore /> </a>
+    <a href="#" className=Styles.a>
+      <img className=Styles.img src=appStore />
+    </a>
+    <a href="#" className=Styles.a>
+      <img className=Styles.img src=playStore />
+    </a>
   </div>;
 };
