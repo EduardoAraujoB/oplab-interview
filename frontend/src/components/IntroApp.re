@@ -1,3 +1,8 @@
+[@bs.module]
+external appStore: string = "../../../../static/assets/appstore.png";
+[@bs.module]
+external playStore: string = "../../../../static/assets/playstore.png";
+
 module Styles = {
   open Css;
 
@@ -48,6 +53,15 @@ module Styles = {
       lineHeight(em(1.5)),
       marginBottom(px(20)),
     ]);
+
+  let a =
+    style([
+      display(inlineBlock),
+      marginRight(px(15)),
+      hover([opacity(0.8)]),
+    ]);
+
+  let img = style([width(px(150))]);
 };
 
 [@react.component]
@@ -65,5 +79,7 @@ let make = () => {
        )}
     </p>
     <h3 className=Styles.h3> {React.string("Download aria for free on")} </h3>
+    <a href="#" className=Styles.a> <img src=appStore /> </a>
+    <a href="#" className=Styles.a> <img src=playStore /> </a>
   </div>;
 };
