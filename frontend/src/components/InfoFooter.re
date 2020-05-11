@@ -21,6 +21,10 @@ module Styles = {
       display(inlineBlock),
       listStyleType(none),
       unsafe("float", "right !important"),
+      media(
+        "only screen and (max-width: 420px)",
+        [unsafe("float", "none !important")],
+      ),
     ]);
 
   let li = style([display(inline)]);

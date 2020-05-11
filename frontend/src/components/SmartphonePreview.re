@@ -18,6 +18,10 @@ module Styles = {
       backgroundRepeat(noRepeat),
       backgroundPosition(center),
       backgroundSize(cover),
+      media(
+        "only screen and (max-width: 801px)",
+        [position(relative), width(pct(100.0)), minHeight(vh(100.0))],
+      ),
     ]);
 };
 

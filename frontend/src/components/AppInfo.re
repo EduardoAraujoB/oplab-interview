@@ -15,6 +15,14 @@ module Styles = {
       overflow(hidden),
       overflowY(auto),
       background(hex("fff")),
+      media(
+        "only screen and (max-width: 801px)",
+        [position(relative), width(pct(100.0))],
+      ),
+      media(
+        "only screen and (max-width: 420px)",
+        [paddingLeft(px(20)), paddingRight(px(20))],
+      ),
     ]);
 };
 

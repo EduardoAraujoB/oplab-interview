@@ -6,7 +6,12 @@ external playStore: string = "../../../../static/assets/playstore.png";
 module Styles = {
   open Css;
 
-  let wrapper = style([paddingTop(px(100)), textAlign(`left)]);
+  let wrapper =
+    style([
+      paddingTop(px(100)),
+      textAlign(`left),
+      media("only screen and (max-width: 801px)", [paddingTop(px(50))]),
+    ]);
 
   let h1 =
     style([
@@ -17,6 +22,10 @@ module Styles = {
       letterSpacing(px(-2)),
       lineHeight(em(1.2)),
       marginBottom(px(15)),
+      media(
+        "only screen and (max-width: 420px)",
+        [fontSize(px(34)), lineHeight(em(1.1))],
+      ),
     ]);
 
   let h3 =
@@ -61,7 +70,11 @@ module Styles = {
       hover([opacity(0.8)]),
     ]);
 
-  let img = style([width(px(150))]);
+  let img =
+    style([
+      width(px(150)),
+      media("only screen and (max-width: 420px)", [width(px(110))]),
+    ]);
 };
 
 [@react.component]
