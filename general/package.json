@@ -6,17 +6,21 @@
   "scripts": {
     "dev": "ts-node-dev --respawn --transpileOnly src/index.ts",
     "build": "tsc",
-    "start": "node build/index.js"
+    "start": "node build/index.js",
+    "test": "jest"
   },
   "devDependencies": {
     "@types/dotenv": "^8.2.0",
+    "@types/jest": "^25.2.2",
     "@types/node": "^13.13.4",
     "@typescript-eslint/eslint-plugin": "^2.30.0",
     "@typescript-eslint/parser": "^2.30.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.2",
+    "jest": "^26.0.1",
     "prettier": "^2.0.5",
+    "ts-jest": "^25.5.1",
     "ts-node-dev": "^1.0.0-pre.44",
     "typescript": "^3.8.3"
   },
