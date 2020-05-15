@@ -19,7 +19,7 @@ async function SearchTweets(keyword: string) {
       }
     );
 
-    return response.data;
+    return response;
   } catch (err) {
     return err.response;
   }
